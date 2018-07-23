@@ -1,0 +1,713 @@
+﻿a{text-decoration: none;}
+
+/*主要内容css*/
+.content{
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+.content_main{
+    width: 1200px;
+    margin:0 auto;
+}
+
+/*职位板块（统计 搜索）*/
+.content_main .post_box{
+    width: 1200px;
+    height: 165px;
+    position: relative;
+    margin-top: 50px;
+}
+/*统计职位*/
+.content_main .post_box .post_Statistics{
+    width: 255px;
+    height: 120px;
+    float: left;
+}
+.post_Statistics a{
+    font-size: 18px;
+    color: #888888;
+    position: relative;
+}
+.post_Statistics  ul{
+    float: left;
+    width: 225px;
+    height:70px;
+    padding-top: 17px;
+}
+
+.post_Statistics  ul li{
+    float: left;
+    width: 37px;
+    height: 61px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.post_Statistics  ul li img:nth-of-type(1){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 45px;
+}
+
+.post_Statistics  ul li img:nth-of-type(2){
+    position: absolute;
+    left: 0px;
+    top: 61px;
+    width: 30px;
+    height: 45px;
+}
+
+
+/*查询*/
+.content_main .post_box .post_Search{
+    width: 880px;
+    height: 120px;
+    float: right;
+}
+.post_Search_box{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #0AA5F5;
+}
+.post_Search_box .post_Search_box_img{
+    width: 30px;
+    height: 30px;
+    margin: 13px;
+    float: left;
+    background: url("../images/bbctsearch.png")no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.post_Search_box input{
+    width: 760px;
+    height: 55px;
+    border: none;
+    color: #666666;
+    text-indent: 60px;
+    font-size: 16px;
+}
+.post_Search_box_btn{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 14px 42px;
+    float: right;
+    background-color: #0AA5F5;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+.post_Search_hot{
+    width: 100%;
+    height: 40px;
+}
+.post_Search_hot a{
+    color: #888888;
+    font-size: 15px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.post_Search_hot span{
+    color: #888888;
+    font-size: 14px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.post_Search_hot a:nth-child(odd) {
+    color: #888888;
+}
+.post_Search_hot a:nth-child(even) {
+    color: #0AA5F5;;
+    font-weight:normal;
+}
+
+/*左侧的工作类型图标*/
+.job_type_icon{
+    width: 52px;
+    top:75%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 10;
+}
+.job_type_icon ul{
+    position: absolute;
+    z-index: 90;
+}
+
+.job_type_icon ul li{
+    margin-bottom: 10px;
+    width: 52px;
+    height: 51px;
+    /*background: url("../images/job_type.png");*/
+    cursor: pointer;
+}
+
+.job_type_icon ul li div {
+    position: relative;
+    top: -40px;
+    /* bottom: 14px; */
+    left: 55px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+.job_type_icon li a{display: inline-block;width: 100%;height: 100%;cursor: pointer;}
+.float-l-1{background-image: url(../images/job_type.png);background-repeat:no-repeat;width: 50px;height: 50px;background-position:-60px 0;}
+.float-l-2{background-image: url(../images/job_type.png);background-repeat:no-repeat;width: 50px;height: 50px;background-position:0 -55px;}
+.float-l-4{background-image: url(../images/job_type.png);background-repeat:no-repeat;width: 50px;height: 50px;background-position:0 -165px;}
+.float-l-6{background-image: url(../images/job_type.png);background-repeat:no-repeat;width: 50px;height: 50px;background-position:0 -276px;}
+.float-l-7{background-image: url(../images/job_type.png);background-repeat:no-repeat;width: 50px;height: 50px;background-position:0 -332px;}
+.float-l-12{background-image: url(../images/job_type.png);background-repeat:no-repeat;width: 50px;height: 50px;background-position:0 -608px;}
+
+.float-l-11{background: url(../images/job_type.png);background-repeat:no-repeat;background-position: -115px -15px;width: 95px;}
+.float-l-22{background: url(../images/job_type.png);background-repeat:no-repeat;background-position: -115px -70px;width: 95px;}
+.float-l-44{background: url(../images/job_type.png);background-repeat:no-repeat;background-position: -115px -180px;width: 95px;}
+.float-l-66{background: url(../images/job_type.png);background-repeat:no-repeat;background-position: -115px -291px;width: 95px;}
+.float-l-77{background: url(../images/job_type.png);background-repeat:no-repeat;background-position: -115px -346px;width: 95px;}
+.float-l-222{background: url(../images/job_type.png);background-repeat:no-repeat;background-position: -115px -621px;width: 95px;}
+
+.job_type_icon  li:nth-child(1):hover .float-l-1{background-position:-60px 0px !important;}
+
+.job_type_icon  li:nth-child(2):hover .float-l-7{background-position:-60px -332px !important;}
+
+.job_type_icon  li:nth-child(3):hover .float-l-4{background-position:-60px -165px !important;}
+
+.job_type_icon  li:nth-child(4):hover .float-l-2{background-position:-60px -55px !important;}
+
+.job_type_icon  li:nth-child(5):hover .float-l-6{background-position:-60px -276px !important;}
+
+.job_type_icon  li:nth-child(6):hover .float-l-12{background-position:-60px -608px !important;}
+
+.job_type_icon  li:hover div{display: block;}
+
+
+
+/*岗位模块介绍*/
+.job_type_box{
+    width: 1200px;
+    margin: 0px auto;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 26px;
+}
+
+/*类别岗位信息*/
+.job_type_info{
+    width: 280px;
+    height: 370px;
+    float: left;
+}
+
+.job_type_text{
+    width: 80%;
+    margin: 0 auto;
+}
+/*标题*/
+.job_type_text .job_info_title{
+    border-bottom: 1px solid #DDDDDD;
+    margin: 0 auto;
+    padding: 35px 0px 18px 0px;
+}
+
+.job_type_text .job_info_title a{
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.job_type_text .text_box span {
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 20px;
+}
+
+
+.job_type_text .text_box span:hover{
+    color: #0aa5f7;
+}
+
+/*工作岗位列表*/
+.job_type_info_list{
+    width: 915px;
+    float: left;
+    padding-bottom: 5px;
+    border: 1px solid #DDDDDD;
+    border-left: none;
+}
+.job_type_info_list ul{
+    float: left;
+}
+
+.job_type_info_list ul li{
+    float: left;
+    width: 45%;
+    padding: 10px 10px 0px 34px;
+}
+
+.job_type_info_list ul li:nth-child(odd){
+    border-right: 1px dashed #DDDDDD;
+}
+
+
+/*内框*/
+.job_type_info_box{
+    width: 95%;
+    display: inline-block;
+    padding: 10px 0px 10px 0;
+    border-bottom: 1px dashed #DDDDDD;
+}
+
+
+
+/*公司logo*/
+.job_type_info_box img:nth-child(1){
+    width: 78px;
+    height: 78px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #DDDDDD;
+}
+
+.job_type_info_box .job_list_text{
+    float: left;
+    width: 76%;
+    margin-left: 10px;
+}
+/*标题*/
+.job_list_text a:nth-child(1){
+    font-size: 16px;
+    display: block;
+    color: #000000;
+    line-height: 27px;
+}
+.job_list_text a:nth-child(2){
+    font-size: 13px;
+    display: block;
+    color: #666666;
+    line-height: 27px;
+}
+.job_list_text a:nth-child(3){
+    font-size: 16px;
+    display: inline-block;
+    color: #ff9c00;
+    line-height: 27px;
+}
+.job_list_text a:nth-child(4){
+    font-size: 10px;
+    display: inline-block;
+    color: #666666;
+    float: right;
+    margin-top: 5px;
+    line-height: 27px;
+}
+
+.job_list_text img{
+    width: 5%;
+    float: right;
+    margin: 10px 5px 0px 0px;
+    border:none!important;
+}
+
+/*友情链接*/
+.other_href{
+    width: 100%;
+    margin: 50px auto;
+    height: 50px;
+    border-bottom: 1px solid #DDDDDD;
+    display: table;
+    text-align: center;
+}
+
+/*标题横线收起*/
+.other_href_title{
+    width: 1200px;
+    /* padding-left: 50px; */
+    display: inline-block;
+    text-align: center;
+}
+
+.other_href_title_hr {
+    width: 83%;
+    display: inline-block;
+    float: left;
+    margin-top:10px;
+    color: #333333;
+    cursor: pointer;
+    border-top: 1px solid #dddddd;
+}
+
+.other_href_title a{
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    margin-right: 5px;
+    color: #333333;
+}
+
+#collected {
+    padding: 4px 15px;
+    border: 1px solid #a9a7a7;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    color: #333333;
+    cursor: pointer;
+}
+
+/*链接文本*/
+.other_href_content{
+    margin: 10px auto;
+    width: 1150px;
+    display: inline-table;
+    padding-bottom: 10px;
+}
+.other_href_content li{
+    padding-right:20px;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+}
+.other_href_content li a{
+    line-height: 30px;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+}
+
+/*页脚*/
+.footer{
+    width: 100%;
+    float: left;
+    background-color: #f5f5f5;
+}
+
+.footer_box{
+    width: 80%;
+    margin: 45px auto;
+    /* margin-left: 17%; */
+    margin-bottom: 0px;
+    text-align: center;
+    display: table;
+    padding-bottom: 15px;
+}
+.footer_box_info{
+    float: left;
+    width: 19%;
+}
+
+.footer_box_info:not(:last-child){
+    border-right: 1px solid #DDDDDD;
+}
+
+/*标题*/
+.footer_box_info_title{
+    width: 100px;
+    margin: 0 auto;
+}
+.footer_box_info_title a{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    display: block;
+}
+.footer_box_info span{
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+    display: block;
+    color: #888888;
+    line-height: 30px;
+    cursor: pointer;
+}
+.footer_box_info span:hover{
+    color: #0AA5F5;
+}
+
+.footer_box_info_title img{
+    width: 15px!important;
+    float: left;
+    margin-top: 5px;
+}
+
+.footer_text{
+    width: 75%;
+    /* margin-left: 20%; */
+    margin: 0 auto;
+    display: table;
+    border-top: 1px solid #DDDDDD;
+}
+.declare {
+    margin-bottom: 20px;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    padding-top: 30px;
+}
+.copyright {
+    margin-bottom: 20px;
+    float: right;
+    padding-top: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.declare a {
+    font-weight: bold;
+    color: #0AA5F5;
+}
+.copyright span {
+    font-size: 12px;
+}
+
+.dis-no{
+    display: none;
+}
+
+/*底部悬浮*/
+
+.bottom{
+    float:left;
+    display: table;
+}
+.float_bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -70px;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+}
+.float_bottoms {
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/bottom_02.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+/*ul*/
+.bottom_list {
+    width: 1200px;
+    margin: 0 auto;
+}
+.bottom_list li {
+    height: 100%;
+}
+.bottom_list li:nth-child(1) {
+    width: 139px;
+    float: left;
+}
+.bottom_list li:nth-child(1) img {
+    width: 139px;
+    height: 46px;
+    margin: 12px 0;
+}
+.bottom_list li:nth-child(2) {
+    width: 468px;
+    margin-left: 210px;
+    float: left;
+}
+.bottom_list li:nth-child(2) img {
+    width: 468px;
+    height: 70px;
+}
+.bottom_list li:nth-child(3) a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+.bottom_list li:nth-child(3) {
+    width: 180px;
+    float: right;
+    background: #FF9000;
+}
+.bottom_list li:nth-child(3):hover {
+    background: #ea9b35;
+}
+/*关闭按钮*/
+.bottom_close {
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    -webkit-animation: back 200ms 1 forwards;
+    animation: back 200ms  1 forwards;
+}
+
+.bottom_close:hover{
+    -webkit-animation: go 200ms  1 forwards;
+    animation: go 200ms  1 forwards;
+}
+
+@keyframes go {/*移入的动画*/
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes back {/*移出的动画*/
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+
+.bottom_close img {
+    margin-top: 22px;
+    transition: transform 1s;
+}
+.bottom_block {
+    width: 219px;
+    height: 70px;
+    position: fixed;
+    left:-219px;
+    bottom: 0;
+    z-index: 90;
+    cursor: pointer;
+}
+.bottom_block img {
+    width: 100%;
+    height: 100%;
+}
+
+/*右侧浮动*********************/
+
+.float_right {
+    position: fixed;
+    right: 40px;
+    bottom: 75px;
+    width: 50px;
+    height: 150px;
+    z-index: 100;
+}
+.float_right li {
+    width: 100%;
+    height: 49.3px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/*几个图标*/
+.wxewm0 {
+    background-image: url(../images/float-r.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-position: -142px 0;
+}
+
+
+.wxewm1 {
+    position: absolute;
+    right: 56px;
+    bottom: 0;
+    background-image: url(../images/float-r.png);
+    background-repeat: no-repeat;
+    width: 137px;
+    height: 151px;
+    background-position: 0 -58px;
+}
+.consult0 {
+    background-image: url(../images/float-r.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-position: -142px -49px;
+}
+
+.consult1 {
+    position: absolute;
+    right: 56px;
+    bottom: 5px;
+    top: 5px;
+    background-image: url(../images/float-r.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 40px;
+    background-position: -38px -214px;
+}
+
+.uptop0 {
+    background-image: url(../images/float-r.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-position: -142px -100px;
+}
+
+.uptop1 {
+    position: absolute;
+    right: 56px;
+    bottom: 5px;
+    top: 5px;
+    background-image: url(../images/float-r.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 40px;
+    background-position: -38px -263px;
+}
+
+/*悬浮显示*/
+.float_right li:hover .wxewm1{display: block !important;}
+.float_right li:hover .consult1{display: block !important;}
+.float_right li:hover .uptop1{display: block !important;}
+.float_right li:hover .wxewm0{background-repeat:no-repeat;width: 50px;height: 50px;display: inline-block;background-position: -142px -160px;}
+.float_right li:hover .consult0{background-image: url(../images/float-r.png);background-repeat:no-repeat;width: 50px;height: 50px;display: inline-block;background-position: -142px -210px;}
+.float_right li:hover .uptop0{background-image: url(../images/float-r.png);background-repeat:no-repeat;width: 50px;height: 50px;display: inline-block;background-position: -142px -260px;}

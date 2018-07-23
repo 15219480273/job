@@ -1,0 +1,429 @@
+*{ margin:0;padding:0;}
+body{font:12px/1.5 'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',微软雅黑,黑体,Arial,sans-serif;min-width:1200px;}
+a{    text-decoration: none; cursor:pointer;}
+ul {list-style: none;}
+
+.main_box{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+}
+
+/*注册大框*/
+.reg_main{
+    width: 950px;
+    height: 700px;
+    border-radius: 20px;
+    margin: 70px auto;
+    border:1px solid #DDDDDD;
+    box-shadow: 0px 5px 0px #DBDBDB;
+    position: relative;
+}
+
+.reg_main .reg_main_head{
+    width: 100%;
+    height: 120px;
+    background: url(../images/register/newusernav.jpg)no-repeat;
+    background-size: 100% 100%;
+    color:#ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height:120px;
+    position: relative;
+}
+.reg_main .reg_main_content{
+    width: 100%;
+    float: left;
+}
+
+.reg_main_content_box{
+    width: 500px;
+    height: 470px;
+    margin: 50px auto;
+}
+
+.reg_main_content_box_head{
+    width: 100%;
+    height: 40px;
+
+}
+.reg_main_content_box_main{
+    float:left;
+    width: 100%;
+}
+
+.reg_main_content_box_main p{
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #ff3333;
+    display: none;
+}
+
+
+.reg_title_box{
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+
+.reg_title{
+    width: 100px;
+    height: 30px;
+    margin:10px auto;
+}
+
+.reg_title_icon_phone{
+    float: left;
+    width: 15px;
+    height: 25px;
+    background:url(../images/register/phone.png)no-repeat;
+}
+.phone_on{
+     background:url(../images/register/phone_1.png)no-repeat;
+}
+
+.reg_title_icon_email{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background:url(../images/register/post.png)no-repeat;
+}
+
+.email_on{
+    background:url(../images/register/post_1.png)no-repeat!important;
+}
+
+
+.reg_title a{
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.reg_title_active{
+    color:#0AA5F5;
+}
+/*手机 小三角*/
+.border_box_phone{
+    width: 100%;
+    height: 15px;
+    float: left;
+    border-top: 1px solid #0AA5F5;
+    position: relative;
+}
+
+.border_box_phone:before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 120px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom-color: #0aa5f5;
+}
+
+.border_box_phone:after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 120px;
+    top: -19px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+}
+/*邮件 小三角*/
+.border_box_email{
+    width: 100%;
+    height: 15px;
+    float: left;
+    border-top: 1px solid #0AA5F5;
+    position: relative;
+}
+
+.border_box_email:before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 375px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom-color: #0aa5f5;
+}
+
+.border_box_email:after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 375px;
+    top: -19px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+}
+.reg_main_content_box input{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    text-indent: 10px;
+}
+.user_photo_box{
+    width: 100%;
+    float: left;
+}
+
+.user_photo_box a{
+    float: left;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.user_photo_box input{
+    width: 165px!important;
+    text-indent: 0px;
+    margin-top: 30px;
+    margin-right: 20px;
+    float: left;
+}
+
+/*用户上传的头像预览*/
+.user_photo_show{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 10px;
+    float: left;
+}
+.user_photo_show img{
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-radius: 50px;
+}
+/*验证码*/
+.reg_yzm{
+    width: 45%;
+    height: 40px;
+    float: left;
+    margin-top: 30px;
+    border:1px solid #DDDDDD;
+}
+
+.reg_yzm input{
+    width: 94px;
+    height: 40px;
+    float: left;
+    border:none;
+    margin-top: 0;
+    text-indent:10px;
+}
+
+.reg_yzm_num{
+    width: 100px;
+    height: 35px;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    color: #888888;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.reg_yzm_resh{
+    float: right;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    margin-right: 5px;
+    position: relative;
+    background: url(../images/register/resh.png)no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.reg_yzm_btn{
+    float: right;
+    width:100px;
+    height: 40px;
+    background-color:#0AA5F5;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+/*用户接受协议*/
+.accept_box{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+}
+.accept_box_icon{
+    width:20px;
+    height: 20px;
+    float: left;
+    background: url(../images/register/box.png)no-repeat center;
+    background-size: 12px 12px;
+}
+
+.accept_box a{
+    margin-left: 5px;
+    color: #666666;
+    font-size: 12px;
+}
+.accept_box a span{
+    color:#0AA5F5;
+}
+
+/*注册*/
+.register_btn{
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #F58C0A;
+    cursor: pointer;
+}
+
+.tologin{
+    margin-top: 10px;
+    width: 120px;
+    float:right;
+    font-size: 12px;
+}
+
+.tologin a{
+    color: #0AA5F5;
+}
+
+footer {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    border-top: 1px solid #DBDBDB;
+}
+
+.declare {
+    float: left;
+    font-size: 14px;
+    color: #666;
+    padding-top: 30px;
+}
+
+.declare a {
+    font-weight: bold;
+    color: #0AA5F5;
+}
+.copyright {
+    float: right;
+    padding-top: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.copyright span {
+    font-size: 12px;
+}
+
+.user_photo_src{
+    width:200px!important;
+    height: 25px!important;
+    padding: 5px;
+    display: block;
+}
+
+.user_photo_src_p{
+    width: 165px!important;
+    height: 20px!important;
+    display: block;
+}
+.user_photo_src_e{
+    width: 165px!important;
+    height: 20px!important;
+    display: block;
+}
+
+/*用户协议*/
+.user_agree{
+    width:100%;
+    height: 974px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 20;
+    display-: none;
+    position: absolute;
+}
+
+.user_agree .close_box{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    margin: 30px;
+    background:url(../images/register/close.png)no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/*协议内容盒子*/
+.user_agree .user_agree_box{
+    width: 600px;
+    height: 750px;
+    margin:70px auto;
+    overflow: auto;
+    border-radius: 10px;
+    border: 5px solid #4a86f5; 
+    background-color: #ffffff;
+}
+/*主要内容*/
+.user_agree_box .regist_content{
+    width: 100%;
+}
+/*标题*/
+.user_agree_box .regist_content .regist_title{
+    margin:10px auto;
+    font-size: 18px;
+    text-align: center;
+    font-weight:bold;
+}
+/**/
+.user_agree_box .regist_content .regist_main{
+    width:100%;
+    margin:10px auto;
+}
+/*小标题*/
+.regist_main .rm_title{
+    font-size: 16px;
+    font-weight:bold;
+    background-color:#38a2e0;
+    display: inline-block;
+    padding:5px 15px; 
+    border-radius: 0px 20px 20px 0px;
+}
+/*协议细则*/
+.regist_main  .rm_content{
+    width: 90%;
+    margin: 0 auto;
+    text-indent:20px
+}
+
+.regist_main  .rm_content p{
+    font-size: 15px;
+    margin:20px auto;
+}

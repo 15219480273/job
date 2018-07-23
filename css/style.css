@@ -1,0 +1,447 @@
+﻿*{ margin:0;padding:0;}
+body{font:12px/1.5 'Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',微软雅黑,黑体,Arial,sans-serif;min-width:1200px;}
+a{    text-decoration: none; }
+ul {list-style: none;}
+/*导航*/
+.header {
+    width: 100%;
+    height: 80px;
+    background: #0AA5F5;
+    position: relative;
+}
+/*导航内容*/
+.hdcontent {
+    width: 1200px;
+    margin: auto;
+    height: 80px;
+}
+.logo{
+	margin-top: 17px;
+    float: left;
+}
+
+.header_list {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_list li {
+    float: left;
+    margin-left: 25px;
+    line-height: 80px;
+    height: 80px;
+}
+
+.header_list li a {
+	cursor:pointer;
+    color: #D2E9FC;
+    height: 60px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.header_list li:hover a{
+	border-bottom:1px solid #ffffff;
+	color: #FFFFFF !important;
+}
+
+/*登录注册*/
+.header_mark_login {
+    float: right;
+    list-style: none;
+}
+
+.header_mark_login li {
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.header_mark_login li a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 80px;
+    text-align: center;
+    line-height: 36px;
+    width: 70px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin-right: 10px;
+    color: #fff;
+    margin-top: 20px;
+    cursor:pointer;
+}
+
+.hdon{
+    background: #fff;
+    color: #0AA5F5 !important;
+}
+
+/*已登录的*/
+.header_logined {
+    display: block;
+    float: right;
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.header_logined li {
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+
+}
+
+.header_logined{float: right;}
+.header_logined li{float: left;text-align: right;margin-right: 10px;}
+
+
+.username {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+}
+.username span {
+    font-size: 16px;
+}
+
+.exit {
+
+	left:5px;
+	position: relative;
+    color: #fff;
+    font-size: 14px;
+}
+
+.exit a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.user_photo {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.user_photo img{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/*轮播*/
+.banner_big{
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    float: left;
+    background: #F5F5F5;
+    position: relative;
+}
+
+.banner_box{
+    width: 1200px;
+    overflow: hidden;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner_box:hover .button_left,.banner_box:hover .button_right{
+    display: block;
+}
+
+
+/*登录注册*/
+.cover{
+    position: absolute;
+    width: 360px;
+    height: 400px;
+    z-index: 40;
+    background: #f5f5f5;
+    top: 0;
+    right: -20px;
+    float: left;
+}
+.indexlogin{
+    width: 320px;
+    height: 400px;
+    margin: auto;
+    background: #fff;
+}
+
+.indexlogin .lg_title{
+    height: 60px;
+    line-height: 60px;
+}
+
+/*当前选中样式*/
+.clicked{
+   color: #0ba5f5 !important;
+   border-bottom: 1px solid #0ba5f5 !important;
+}
+
+.indexlogin .lg_title p{
+    width: 50%;
+    height: 59px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 16px;
+    color: #bbb;
+    cursor: pointer;
+}
+.lg_main{
+    margin: 0px 20px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.lg_main p {
+    font-size: 15px;
+    color: #666;
+    line-height: 50px;
+}
+
+.lg_main input {
+    height: 48px;
+    border: 1px solid #DBDBDB;
+    font-size: 15px;
+    width: 278px;
+    font-family: "微软雅黑";
+    text-indent: 15px;
+    margin-bottom: 10px;
+}
+
+.rrem {
+    float: right;
+    color: #0BA5F5;
+    font-size: 14px;
+}
+/*登陆按钮*/
+.lgbtn {
+    margin-top: 30px;
+}
+
+.lgbtn .lgsubmit {
+    display: block;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    background: #ff9c00;
+    cursor: pointer;
+}
+
+.lgbtn p {
+    float: right;
+    font-size: 14px;
+    color: #999;
+    line-height: 40px;
+}
+
+/*验证码*/
+.cm-code {
+    position: relative;
+}
+/*验证码图片*/
+.number {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+}
+.refresh {
+    position: absolute;
+    top: 12px;
+    right: 28px;
+    cursor: pointer;
+}
+/*已登录后的样式*/
+.indexlogin .user_pic {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px dashed #DBDBDB;
+    height: 137px;
+}
+.indexlogin .user_pic i{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.indexlogin .user_pic i img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.indexlogin .user_pic p {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 8px;
+}
+
+.indexlogin .usercenter {
+    padding: 5px 30px;
+}
+
+.indexlogin  .usercenter a {
+    font-size: 14px;
+    color: #333;
+    width: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*???*/
+.usercenter a:nth-child(odd) {
+    float: left;
+}
+.usercenter a:nth-child(even) {
+    float: right;
+    text-align: right;
+}
+/*小图标*/
+.ucr1 {
+    background: url(../images/login.png);
+    background-position: 0 0;
+}
+.ucr2 {
+    background: url(../images/login.png);
+    background-position: -16px 0;
+}
+.ucr3 {
+    background: url(../images/login.png);
+    background-position: 0 -16px;
+}
+.ucr4 {
+    background: url(../images/login.png);
+    background-position: -16px -16px;
+}
+
+.usercenter a span {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.usercenter a label {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.usercenter a label:hover {
+    color:#0AA5F5!important;
+}
+/*退出按钮*/
+.indexlogin_after_button {
+    clear: both;
+    width: 238px;
+    height: 38px;
+    border: 1px solid #DBDBDB;
+    border-radius: 40px;
+    margin: 30px 40px;
+    background: #F5F5F5;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+    line-height: 10px;
+}
+
+.indexlogin_after_button:hover {
+    background: #0AA5F5!important;
+    color: #ffffff;
+}
+
+.window{
+    width: 2580px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: -hidden;
+    left: 0;
+}
+.window li{
+    float: left;
+    width: 860px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    cursor: pointer;
+}
+
+/*轮播按钮*/
+.button_left{
+    left: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    line-height: 400px;
+    display: none;
+}
+
+.button_left img,.button_right img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.button_right{
+    right: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    line-height: 400px;
+    display: none;
+}
+
+.index {
+    width: 860px;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    text-align: center;
+}
+.index span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 0 10px;
+    cursor:pointer;
+}
+.index .active{
+    background-color: #ffffff!important;
+}
+/*验证码*/
+.reg_yzm_num{
+    top:5px;
+    left: 115px;
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    color: #888888;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}

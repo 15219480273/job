@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+</head>
+<body>
+	<!--导航-->
+	<header class="header">
+	<div class="hdcontent" id="main_content">
+		<img class="logo" src="images/logo.png" alt="logo">
+		<ul id="header" class="header_list" >
+			<li>
+				<a>首页</a>
+			</li>
+			<li>
+				<a>找工作</a>
+			</li>
+			<li>
+				<a>校园招聘</a>
+			</li>
+		</ul>
+
+		<ul class="header_list" style="display:none;">
+			<li><a style='border-bottom:1px solid #ffffff;color: #FFFFFF !important;'>首页</a></li>
+			<li><a>我的易工作</a></li>
+			<li><a>找工作</a></li>
+			<li><a>我的投递</a></li>
+			<li><a>我的收藏</a></li>
+			<li><a>个人简历</a></li>
+			<li><a>校园招聘</a></li>
+		</ul>
+
+
+
+		<ul class="header_list" style="display:none;">
+			<li><a style='border-bottom:1px solid #ffffff;color: #FFFFFF !important;'>首页</a></li>
+			<li><a>企业中心</a></li>
+			<li><a>发布职位</a></li>
+			<li><a>搜索简历</a></li>
+			<li><a>职位管理</a></li>
+			<li><a>简历管理</a></li>
+			<li><a>企业信息</a></li>
+			<li><a>校园招聘</a></li>
+		</ul>
+
+
+
+		<ul id='header_nm_login' class='header_mark_login'>
+			<li>
+				<a href="register.html" id='mark' class='hdon' onmouseover="qh('mark','login','hdon')">注册</a>
+				<a id='login' onmouseover="qh('login','mark','hdon')">登录</a>
+			</li>
+		</ul>
+
+		<ul id="header_gr_xx" class="header_logined" style="display: none;">
+			<li>
+				<p class="username">
+					用户名：
+					<span id="user"></span>
+				</p>
+				<p class="exit">
+					<a>账号设置</a>
+					  &nbsp; /  &nbsp;
+					<a>退出登录</a>
+				</p>
+			</li>
+			<li id="header_gr_tx">
+				<p class="user_photo">
+					<img src="images/user_photo/user_photo.png" alt="用户头像">
+				</p>
+			</li>
+		</ul>
+	</div>
+	</header>
+	<!--导航结束-->
+
+	<!--轮播-->
+	<div class="banner_big">
+		<div class="banner_box">
+
+			<!--登录注册-->
+			<div class="cover">
+				<!--用户未登录-->
+				<div id="login_before" class="indexlogin">
+					<div class="lg_title">
+						<p id="lg_tilte_per" class="clicked" style="float: left;" onclick="change('lg_tilte_per','lg_tilte_com','lg_main_per','lg_main_com','clicked')">个人用户</p>
+
+						<p id="lg_tilte_com" style="float: right;" onclick="change('lg_tilte_com','lg_tilte_per','lg_main_com','lg_main_per','clicked')">企业用户</p>
+
+					</div>
+					<!--个人-->
+					<div id="lg_main_per" class="lg_main">
+						<p>一大波offer正在袭来你还在等什么？</p>
+						<input id="userName_p" type="text" placeholder="输入手机号码/邮箱" id="applicantUserPhone">
+						<input id="userPwd_p" type="password" placeholder="输入密码" id="applicantUserPasswd">
+
+						<div class="remark">
+							<a href="" class="rrem">忘记密码？</a>
+						</div>
+
+						<div class="lgbtn">
+							<a id="loginBtn_p" class="lgsubmit" onclick="Login_P();">登 录</a>
+							<p>还没有账号？<a href="register.html" style="color: #ff9c00;">立即注册</a></p>
+						</div>
+					</div>
+					<!--企业-->
+					<div id="lg_main_com" class="lg_main" style="border:none; display:none;">
+						<p style="text-align:center;">寻找千里马</p>
+						<input id="userName_c" type="text" placeholder="输入用户名" id="companyUserPhone">
+						<input id="userPwd_c" type="password" placeholder="请输入密码" id="companyUserPasswd">
+						<div class="cm-code">
+							<input type="text" placeholder="输入验证码" id="codeImg">
+							<span class="reg_yzm_num" id="number">
+								<img src="images/number_img.jpg" width="80" height="30" alt="">
+							</span>
+							<span class="refresh" onclick="createCode();">
+								<img src="images/refresh.png" alt="">
+							</span>
+						</div>
+						<div class="lgbtn" style="margin-top:10px">
+							<a id="loginBtn_c" class="lgsubmit" onclick="Login_C();">登录</a>
+							<p style="float:left!important;">
+								还没有账号？
+								<a href="register.html" style="color: #ff9c00;">立即注册</a>
+							</p>
+							<a href="" class="rrem" style="padding-top: 10px;">忘记密码？</a>
+						</div>
+					</div>
+				</div>
+				<!--用户已登录-->
+				<div id="login_after" class="indexlogin" style="display: none;">
+					<div class="user_pic">
+						<i>
+							<img src="images/user_photo/user_photo.png" alt="">
+						</i>
+						<p id="login_after_user">15219480273</p>
+					</div>
+					<div class="usercenter">
+						<a href="">
+							<span class="ucr1"></span>
+							<label>职业测评</label>
+						</a>
+						<a href="">
+							<span class="ucr2"></span>
+							<label>我的简历</label>
+						</a>
+						<a href="">
+							<span class="ucr3"></span>
+							<label>我的投递</label>
+						</a>
+						<a href="">
+							<span class="ucr4"></span>
+							<label>账号设置</label>
+						</a>
+					</div>
+					<button id="back" class="indexlogin_after_button" onclick="login_back()">退出登录</button>
+
+				</div>
+			</div>
+			<!--登录注册end-->
+
+			<!--banner图片-->
+			<ul class="window" id="banner_list">
+				<li>
+					<a><img src="images/banner.png" alt="" width="100%" height="100%"></a>
+				</li>
+				<li>
+					<a><img src="images/banner1.png" alt="" width="100%" height="100%"></a>
+				</li>
+				<li>
+					<a><img src="images/banner2.png" alt="" width="100%" height="100%"></a>
+				</li>
+			</ul>
+
+			<!--轮播左右键-->
+			<div class="button_left" id="btnL">
+				<img src="images/banner_btnL.png" alt="">
+			</div>
+			<div class="button_right" id="btnR">
+				<img src="images/banner_btnR.png" alt="">
+			</div>
+			<div class="index" id="banner_index">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="content_main">
+			<div class="post_box">
+				<div class="post_Statistics">
+					<a>在线职位统计</a>
+					<hr style="height:1px;border:none;border-top:1px dashed #888888;margin-top:15px;" />
+					<ul id="List">
+						<li><img src="images\Statistics/0.png" alt=""><img src="images\Statistics/0.png" alt=""></li>
+						<li><img src="images\Statistics/0.png" alt=""><img src="images\Statistics/0.png" alt=""></li>
+
+						<li><img src="images\Statistics/0.png" alt=""><img src="images\Statistics/0.png" alt=""></li>
+						<li><img src="images\Statistics/0.png" alt=""><img src="images\Statistics/0.png" alt=""></li>
+
+						<li><img src="images\Statistics/0.png" alt=""><img src="images\Statistics/0.png" alt=""></li>
+						<li><img src="images\Statistics/0.png" alt=""><img src="images\Statistics/0.png" alt=""></li>
+					</ul>
+					<a style="font-size:16px;margin-left:8px;top:25px;">个</a>
+				</div>
+				<div class="post_Search">
+					<div class="post_Search_box">
+						<div class="post_Search_box_img"></div>
+						<input id="search_word" type="text" placeholder="输入职位或公司名称">
+						<div id="" class="post_Search_box_btn" onclick="Jump('search.html',search_word.value);">搜索</div>
+					</div>
+					<div class="post_Search_hot">
+						<span>热门搜索：</span>
+						<a>金融</a>
+						<a>行政</a>
+						<a>销售</a>
+						<a>IT产品</a>
+					</div>
+				</div>
+			</div>
+
+			<!--职位列表-->
+			<div class="job_type_icon">
+				<ul>
+					<!-- <li style="background-position: -58px 0px;"></li>
+					<li style="background-position: 0px 383px;"></li>
+					<li style="background-position: 0px -165px;"></li>
+					<li style="background-position: 0px -55px;"></li>
+					<li style="background-position: 0px -275px;"></li>
+					<li style="background-position: 0px 107px;"></li> -->
+					<li>
+						<a class="float-l-1"></a>
+						<div class="float-l-11 dis-no"></div>
+					</li>
+					<li>
+						<a class="float-l-7"></a>
+						<div class="float-l-77 dis-no"></div>
+					</li>
+					<li>
+						<a class="float-l-4"></a>
+						<div class="float-l-44 dis-no"></div>
+					</li>
+					<li>
+						<a class="float-l-2"></a>
+						<div class="float-l-22 dis-no"></div>
+					</li>
+					<li>
+						<a class="float-l-6"></a>
+						<div class="float-l-66 dis-no"></div>
+					</li>
+					<li>
+						<a class="float-l-12"></a>
+						<div class="float-l-222 dis-no"></div>
+					</li>
+				</ul>
+			</div>
+			<!--1-->
+			<div class="job_type_box">
+				<!--岗位简介-->
+				<div class="job_type_info" style="background:url('images/job_type1.jpg');">
+					<div class="job_type_text">
+						<div class="job_info_title"></div>
+						<div class="text_box">
+							<span>互联网/移动互联网/电子商务</span>
+							<span>网络游戏</span>
+							<span>计算机软件</span>
+							<span>IT服务/系统集成</span>
+						</div>
+					</div>
+				</div>
+				<!--岗位列表-->
+				<div class="job_type_info_list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<!--2-->
+			<div class="job_type_box">
+				<!--岗位简介-->
+				<div class="job_type_info" style="background:url('images/job_type2.jpg');">
+					<div class="job_type_text">
+						<div class="job_info_title"></div>
+						<div class="text_box">
+							<span>互联网/移动互联网/电子商务</span>
+							<span>网络游戏</span>
+							<span>计算机软件</span>
+							<span>IT服务/系统集成</span>
+						</div>
+					</div>
+				</div>
+				<!--岗位列表-->
+				<div class="job_type_info_list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<!--3-->
+			<div class="job_type_box">
+				<!--岗位简介-->
+				<div class="job_type_info" style="background:url('images/job_type3.jpg');">
+					<div class="job_type_text">
+						<div class="job_info_title"></div>
+						<div class="text_box">
+							<span>互联网/移动互联网/电子商务</span>
+							<span>网络游戏</span>
+							<span>计算机软件</span>
+							<span>IT服务/系统集成</span>
+						</div>
+					</div>
+				</div>
+				<!--岗位列表-->
+				<div class="job_type_info_list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<!--4-->
+			<div class="job_type_box">
+				<!--岗位简介-->
+				<div class="job_type_info" style="background:url('images/job_type4.jpg');">
+					<div class="job_type_text">
+						<div class="job_info_title"></div>
+						<div class="text_box">
+							<span>电子·通信·硬件</span>
+							<span>网络游戏</span>
+							<span>计算机软件</span>
+							<span>IT服务/系统集成</span>
+						</div>
+					</div>
+				</div>
+				<!--岗位列表-->
+				<div class="job_type_info_list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<!--5-->
+			<div class="job_type_box">
+				<!--岗位简介-->
+				<div class="job_type_info" style="background:url('images/job_type5.jpg');">
+					<div class="job_type_text">
+						<div class="job_info_title"></div>
+						<div class="text_box">
+							<span>电子·通信·硬件</span>
+							<span>网络游戏</span>
+							<span>计算机软件</span>
+							<span>IT服务/系统集成</span>
+						</div>
+					</div>
+				</div>
+				<!--岗位列表-->
+				<div class="job_type_info_list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<!--6-->
+			<div class="job_type_box">
+				<!--岗位简介-->
+				<div class="job_type_info" style="background:url('images/job_type6.jpg');">
+					<div class="job_type_text">
+						<div class="job_info_title"></div>
+						<div class="text_box">
+							<span>房地产·建筑·物业</span>
+							<span>网络游戏</span>
+							<span>计算机软件</span>
+							<span>IT服务/系统集成</span>
+						</div>
+					</div>
+				</div>
+				<!--岗位列表-->
+				<div class="job_type_info_list">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div class="footer">
+	<div class="other_href">
+			<div class="other_href_title">
+				<a>友情链接</a>
+				<div class="other_href_title_hr"></div>
+				<div id="collected">收起∧</div>
+			</div>
+			<ul class="other_href_content">
+				<li><a>深圳青年人才</a></li>
+				<li><a>深圳市青年创业促进会</a></li>
+				<li><a>深圳人才网</a></li>
+				<li><a>深圳百姓网</a></li>
+				<li><a>深圳社保局官网</a></li>
+				<li><a>仁和会计</a></li>
+				<li><a>托福考试</a></li>
+				<li><a>塔城教育培训网</a></li>
+				<li><a>深圳拓展训练</a></li>
+				<li><a>师大家教网</a></li>
+				<li><a>青岛大学自考本科</a></li>
+		</div>
+
+		<div class="footer_box">
+			<div class="footer_box_info">
+				<img src="images/ft_01.png" alt="">
+			</div>
+			<div class="footer_box_info">
+				<div class="footer_box_info_title">
+					<img src="images/us.png" alt="">
+					<a>关于我们</a>
+				</div>
+				<span>关于易工作网</span>
+				<span>公益声明</span>
+				<span>用户协议</span>
+				<span>媒体报道</span>
+			</div>
+			<div class="footer_box_info">
+				<div class="footer_box_info_title">
+					<img src="images/fuwu.png" alt="">
+					<a>产品服务</a>
+				</div>
+				<span>线上求职招聘</span>
+				<span>人才地图</span>
+				<span>精准招聘</span>
+				<span>线下校园招聘</span>
+			</div>
+			<div class="footer_box_info">
+				<div class="footer_box_info_title">
+					<img src="images/us2.png" alt="">
+					<a>联系我们</a>
+				</div>
+				<span>联系电话</span>
+				<span>帮助中心</span>
+				<span>友情合作</span>
+				<span>意见反馈</span>
+			</div>
+			<div class="footer_box_info">
+				<img src="images/ft_02.png" alt="">
+			</div>
+		</div>
+		<div class="footer_text">
+			<p class="declare"> 声明：未经 <a>job12355.com </a>同意，不得转载本网站之所有招聘信息及作品</p>
+			<p class="copyright">©2015深圳市青年人才服务有限公司版权所有<br>粤ICP备<span>15069795号-1</span></p>
+		</div>
+
+	</div>
+	<!--底部悬浮-->
+	<div class="bottom">
+	<div class="float_bottom">
+		<div class="float_bottoms" >
+			<ul class="bottom_list">
+				<li><img src="images/logo.png"></li>
+				<li><img src="images/bottom_gd_03.png"></li>
+				<li><a href="search.html">立即起航</a></li>
+			</ul>
+			<div class="bottom_close"><img src="images/bottom_close_03.png"></div>
+		</div>
+		<div class="bottom_block"> <img src="images/bottom_02.png"></div>
+	</div>
+
+	</div>
+	<!--右侧悬浮-->
+	<div id="float_r">
+		<ul class="float_right">
+			<li>
+				<a class="wxewm0" href="#"></a>
+				<a class="wxewm1 dis-no" href="#"></a>
+			</li>
+			<li>
+				<a class="consult0" href="#"></a>
+				<a class="consult1 dis-no" href="#"></a>
+			</li>
+			<li>
+				<a class="uptop0" href="#top"></a>
+				<a class="uptop1 dis-no" href="#top"></a>
+			</li>
+		</ul>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/Statistics.js"></script>
+</html>

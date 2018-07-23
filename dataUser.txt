@@ -1,0 +1,36 @@
+﻿[{
+    "userName":"zhangsan",
+    "userPwd":"123456",
+    "tel":"15219480273",
+    "email":"1596887205@qq.com",
+    "img":"images/user_photo/1.png",
+    "userType":1
+},{
+    "userName":"1596887205@qq.com",
+    "userPwd":"123456",
+    "tel":"123456",
+    "email":"123456@qq.com",
+    "img":"images/user_photo/2.png",
+    "userType":2
+},{
+    "userName":"lisi",
+    "userPwd":"bbb123",
+    "tel":"147852963",
+    "email":"147852963@qq.com",
+    "img":"images/user_photo/3.png",
+    "userType":1
+},{
+    "userName":"15219480273",
+    "userPwd":"123456",
+    "tel":"147852963",
+    "email":"147852963@qq.com",
+    "img":"images/user_photo/3.png",
+    "userType":1
+},{
+    "userName":"ssti",
+    "userPwd":"aaa123",
+    "tel":"aaa545646",
+    "email":"aaa45646@qq.com",
+    "img":"images/user_photo/4.png",
+    "userType":2
+}]
